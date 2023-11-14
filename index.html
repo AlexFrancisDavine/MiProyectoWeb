@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md fixed-top bg-light" data-bs-theme="">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">
+        POTTERS
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#desplegable" a>
+
+        <span class="icon-library"></span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="desplegable">
+        <ul class="navbar-nav d-flex w-100">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+
+          <li class="nav-item dropdown dropstart ms-md-auto">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu ">
+              <li> <button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#miModal">Contact
+                  Information</button></li>
+
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="row">
+    <div class="col-lg-12">
+      <img class="img-fluid" src="imagenes/Rajasthan-Pottery-8.jpg">
+    </div>
+  </div>
+
+
+  <div class="row justify-content-center">
+    <section class="col-md-10">
+
+      <div class="container-md text-center mt-5 py-4">
+
+        <h1 class="display-9">"GET STUCK IN THE MUD"</h1>
+        <h3>by POTTERS</h3>
+
+        <div class="row justify-content-center">
+          <section class="col-md-8">
+            <p>Come and get your hands dirty and let your imagination loose shaping clay in all different forms and
+              sizes. We offer all sorts of classes depending on your age, level and preferences.</p>
+          </section>
+        </div>
+
+
+        <div class="row mt-6">
+          <div class="col-sm-12 col-md-4 col-lg-4 py-2 px-1">
+            <h5>Solo Sessions</h5>
+            <div class="card shadow pt-2 pb-2 px-2">
+              <div class="card-text pt-2">
+                <p class="text-justify">Come and join us for a one-to-one session whith teachers who are experts in evry
+                  single level, you can choose from of our three ranges: Beginner-Intermediate-Advanced.
+                  These sessions are completly private and can be between 30-90 minutes long. Prices range from around
+                  25€ an hour and need to be booked at least a week in advance to schedule the right day.
+
+                </p>
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4 py-2 pl-2 pr-2">
+            <h5>Group Clases</h5>
+            <div class="card shadow pt-2 pb-2 px-2">
+              <div class="card-text pt-2">
+                <p>
+                  Here we have the perfect solution for a fun day out, a birthday present or a group of friends who have
+                  an interest in pottery! Come an join us for our group sessions that can be from 2 people up to 6.
+                  These ssions are 1 hour long and include wine, pottery lessons and you get to take home your
+                  masterpiece! Sessions are at a fixed price of 180€ so the more you are the better!
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4 py-2 px-1">
+            <h5>Online lessons</h5>
+            <div class="card shadow pt-2 pb-2 px-2">
+              <div class="card-text pt-2 text-justify">
+                <p>Finally here is our latest and newest way of teaching pottery that has never been done before...
+                  Learn from anywhere you want in the world! We are now introcing virtual sessions since the pandemic
+                  happened. These lessons are only 20€ an hour but requiere 3 things: A webcam, a Zoom account installed
+                  on any device and basic potter's utensiles: a potter's wheel, tools and clay.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div> 
+    </section>
+  </div> 
+
+
+
+  <div class="modal fade " id="miModal" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-fullscreen-lg-down">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title h6" id="miModal">Contact Information</h4>
+          <button type="button" class="bi bi-x-circle-fill" data-bs-dismiss="modal"></button>
+        </div>
+
+
+
+        <div class="modal-body">
+
+
+          <form action="php/codigo.php" method="post" class="needs-validation" novalidate>
+
+
+            <div class="row justify-content-center">
+
+              <div class="col-md-5">
+                <label for="nombre">Name</label>
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="nombre" placeholder="Juan Perez" name="nombre">
+
+                </div>
+                <div class="valid-feedback"> Correct</div> 
+                <div class="invalid-feedback">Incorrect </div> 
+              </div> 
+
+              <div class="col-md-5">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" required class="form-control" name="email" id="email">
+                <div class="valid-feedback">Correct</div>
+                <div class="invalid-feedback">Incorrect format</div>
+              </div> 
+            </div>
+
+
+            <div class="row justify-content-center">
+              <div class="col-10 pt-2">
+                <label for="comentarios" pattern="[a-zA-Z0-9]{5,30}" class="form-label">Comments</label>
+
+                <textarea name="comentarios" required class="form-control" id="comentarios"></textarea>
+                <div class="valid-feedback">Correct</div>
+                <div class="invalid-feedback">Please leave a comment</div>
+
+              </div>
+
+            </div>
+
+
+            <div class="row justify-content-end">
+              <div class="col-1">
+
+                <button class="btn btn-outline-success bg-light mt-2">Send</button>
+              </div>
+
+            </div>
+
+          </form>
+
+
+        </div>
+        <div class="modal-footer">
+
+          <button class="btn btn-warning bg-light" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+
+  <header class="mb-3 container-fluid d-flex flex-column align-items-start justify-content-center">
+  </header>
+
+
+
+  <main class="container-md">
+    <div class="row justify-content-center">
+      <section class="col-md-12">
+        <div class="row mt-2">
+          <div class="col-md-8">
+
+            <div id="miSlider" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#miSlider" data-bs-slide-to="0" class="active"></button>
+
+                <button type="button" data-bs-target="#miSlider" data-bs-slide-to="1"></button>
+
+              </div> 
+
+              <div class="carousel-inner border border-light">
+                <div class="carousel-item active">
+                  <img src="imagenes/Pottery class.jpeg" class="d-block w-100" alt="imagen 1">
+
+                </div>
+
+                <div class="carousel-item">
+                  <img src="imagenes/pottery-classes-kids (3).jpg" class="d-block w-100" alt="imagen 2">
+
+                </div> 
+
+              </div> 
+              <button class="carousel-control-prev" type="button" data-bs-target="#miSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+              </button> 
+
+              <button class="carousel-control-next" type="button" data-bs-target="#miSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+              </button> 
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="col-md-12 d-flex align-items-end">
+              <div class="text-justify">
+                <h3 class="display-6 text-start">ALl ages are available</h3>
+                <div class="text-justify">
+                  <p>Over the years we have had clients from all different places and of all ages. Potters is the
+                    perfect place to find a new talent and let your imagination fly. However we have a few simple rules
+                    you have to follow:</p>
+                  <p>Number 1: All children must be accompanied by an adult</p>
+                  <p>Number 2: We please ask our clients to be as punctual as possible as there is a high demand for our
+                    services.</p>
+                  <p>Number 3: Always have fun and a smile on your face! It is important nit to get frustrated, pottery
+                    isn't about perfection it's about having fun and creating something original which shows your
+                    personality</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </section>
+    </div> 
+
+
+    <div class="row justify-content-center">
+      <section class="col-md-10">
+        <div class="container-md text-center mt-5 py-4">
+          <h2>Doing good through POTTERS</h2>
+          <div class="text-justify">
+            <p>We are very conscious on giving back to society and helping out within our community. That is why 6 cents
+              of every dollar we earn are donated to LOVE ORPHANAGE which is foundation that help all these local
+              orphanages by providing entertainment, school materials, food and clothing. Also, every Tuesday night we
+              invite children from different orphanages to distract them and show them new ways to enjoy activities
+              outside of their residence.
+            </p>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col">
+              <ul class="ul">
+                <li class="li">
+                  <a href="#" class="a" title="Imagen 1">
+                    <img class="img rounded float-left" loading="lazy" src="imagenes/fundraiser.jpg">
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <div class="col">
+                <ul class="ul">
+                  <li class="li">
+                        <a href="#" class="a" title="Imagen 1">
+                      <img class="img-fluid rounded float-right" src="imagenes/pottery-for-kids_600x600.jpg">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          
+          
+          
+   
+
+
+      </section>
+
+    </div>
+
+    </div>
+    </section>
+
+    </div>
+  </main>
+
+
+
+
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+ 
+
+  <script src="js/codigo.js"></script>
+
+
+  <script src="path/to/dist/js/lightbox-plus-jquery.js"></script>
+
+
+</body>
+
+
+<Footer>
+  <div class="container-fluid pt-5 pb-5 bg-dark">
+
+  </div>
+
+
+</Footer>
+
+</html>

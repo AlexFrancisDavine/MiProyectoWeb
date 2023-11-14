@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100..900&family=Poppins:wght@100..700&family=Permanent+Marker&display=swap');
+
+$tipografia1: 'Lato', sans-serif;
+$tipografia2: 'Poppins', sans-serif;
+$color-primario: black;
+
+
+:root {
+  --bs-body-bg: rgba(152, 109, 69, 255);
+  --bs-primary-bg-subtle: transparent;
+
+}
+
+
+.btn-outline-success {
+
+  --bs-btn-border-color: rgba(255, 255, 255, 0);
+  --bs-btn-hover-bg: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: $tipografia1;
+  color: $color-primario;
+
+}
+
+.navbar-brand {
+  color: rgba(152, 109, 69, 255);
+}
+
+
+
+.icon-wink {
+
+  color: rgba(152, 109, 69, 255);
+  font-size: 3rem;
+}
+
+
+h1,
+h2,
+h3 {
+  font-family: 'Permanent Marker', cursive;
+  color: whitesmoke;
+}
+
+
+p,
+h5 {
+  color: rgba(255, 245, 245, 0.874);
+}
+
+h5 {
+  font-weight: bold;
+}
+
+
+.carousel-indicators [data-bs-target] {
+
+  background-color: $color-primario;
+}
+
+
+.carousel-caption {
+
+  color: $color-primario;
+  background-color: white;
+}
+
+
+.carousel-control-next-icon {
+
+  background-image: url(../imagenes/2next.png);
+
+}
+
+
+.carousel-control-prev-icon {
+
+  background-image: url(../imagenes/2previous.png);
+
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  header {
+    height: auto;
+  }
+
+
+
+}
